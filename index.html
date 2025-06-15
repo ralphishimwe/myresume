@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ralph's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul id="nav-list">
+      <li><a href="#home" class="li">Home</a></li>
+      <li><a href="#about" class="li">About</a></li>
+      <li><a href="#skills" class="li">Skills</a></li>
+      <li><a href="#contact" class="li">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="landing" id="home">
+    <h2 class="welcome">Hi, I'm Ralph</h2>
+    <p class="welcome2">I'm a tech enthusiast, passionate learner and an aspiring Software Engineer</p>
+    <div class="social-links">
+      <a href="https://github.com/ralphishimwe" class="ic" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/ishimwe-yvan-ralph-706388231" class="ic" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <button class="explore" onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' })">Explore More</button>
+  </div>
+
+  <div class="about" id="about">
+    <h2 class="abouth2">About Me</h2>
+    <p class="aboutp">A passionate learner and aspiring software engineer. I completed my secondary education in World Mission Highschool
+             and am currently studying Software Engineering at African Leadership University (ALU),
+             where I've been deepening my knowledge and skills for the past 10 months.<br><br>
+
+            During my gap period before starting university, I took time to explore different interests and develop myself.
+             I earned my driving license, and most importantly, discovered a deep passion for technology.
+             I'm currently diving into web development, building projects with HTML, CSS, and JavaScript, while also exploring Python. Every day,
+              I challenge myself to grow as a developer through hands-on learning and creative problem-solving.</p>
+  </div>
+
+  <div class="skills" id="skills">
+    <h2 class="skillsh2">Skills</h2>
+    <div class="skills2">
+      <div class="containers"><div class="favi"><i class="fab fa-linux"></i></div><h2 class="conthead">Linux</h2><p class="contp">Proficient in Ubuntu, and Bash scripting. Experienced in server management, automation, and system security.</p></div>
+      <div class="containers"><div class="favi"><i class="fab fa-python"></i></div><h2 class="conthead">Python</h2><p class="contp">Skilled in Python programming for automation, data analysis, and backend development. Familiar with libraries.</p></div>
+      <div class="containers"><div class="favi"><i class="fas fa-code"></i></div><h2 class="conthead">Front-end</h2><p class="contp">Experienced in HTML, CSS, JavaScript, and frameworks like React and Bootstrap. Able to build responsive and modern web applications.</p></div>
+    </div>
+  </div>
+
+  <div class="contactme" id="contact">
+    <h2 class="contacth2">Contact Me</h2>
+    <input placeholder="Your Name" type="text" class="text" id="name"><br>
+    <input placeholder="Your Email" type="email" class="text" id="email"><br>
+    <textarea placeholder="Your Message" class="texte" id="message"></textarea><br> 
+    <input value="Send Message" type="submit" class="send" onclick="validateForm()">
+  </div>
+
+  <div class="footer">
+    <p class="copyright">&#169; Ralph Yvan Ishimwe 2025 | All Rights Reserved</p>
+    <a class="back" onclick="document.getElementById('home').scrollIntoView({ behavior: 'smooth' })">Back to the top &#8593;</a>
+  </div>
+
+  <script src="script.js">
+    
+  </script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+    html {
+      scroll-behavior: smooth;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: white;
+    }
+    nav {
+      width: 100%;
+      height: 100px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .menu-toggle {
+      display: none;
+      font-size: 30px;
+      position: absolute;
+      right: 30px;
+      cursor: pointer;
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 7em;
+    }
+    .li {
+      font-size: 20px;
+      color: black;
+      position: relative;
+      text-decoration: none;
+    }
+    .li::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      width: 0%;
+      height: 2px;
+      background-color: black;
+      transition: width 0.4s ease-in-out;
+    }
+    .li:hover::after {
+      width: 100%;
+    }
+    .landing {
+      width: 100%;
+      height: 350px;
+      text-align: center;
+      background-color: black;
+      padding: 0 1em;
+    }
+    .welcome {
+      padding-top: 120px;
+      color: white;
+    }
+    .welcome2 {
+      color: white;
+    }
+    .social-links {
+      margin-top: 15px;
+    }
+    .ic {
+      color: white;
+      font-size: 30px;
+      margin: 0 10px;
+    }
+    .explore {
+      margin-top: 15px;
+      padding: 10px;
+      font-size: 17px;
+      color: black;
+      background-color: white;
+      border-radius: 4px;
+      box-shadow: 0px 0px 3px white;
+      border: none;
+      cursor: pointer;
+    }
+    .explore:hover {
+      box-shadow: 0px 0px 15px white;
+      transition: 0.5s;
+    }
+    .about {
+      display: flex;
+      margin-top: 20px;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px 1em 0;
+    }
+    .abouth2 {
+      font-size: 30px;
+      text-align: center;
+    }
+    .aboutp {
+      margin-top: 30px;
+      max-width: 600px;
+      text-align: center;
+    }
+    .skills {
+      width: 100%;
+      padding: 50px 1em;
+    }
+    .skillsh2 {
+      text-align: center;
+      font-size: 30px;
+    }
+    .skills2 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2em;
+      padding-top: 30px;
+    }
+    .containers {
+      width: 200px;
+      background-color: whitesmoke;
+      padding: 20px;
+      border-radius: 6px;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 1s ease;
+    }
+    .containers.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .containers:hover {
+      box-shadow: 0px 0px 15px black;
+      transition: 0.5s;
+    }
+    .contp {
+      padding-top: 20px;
+    }
+    .favi {
+      font-size: 40px;
+    }
+    .contactme {
+      text-align: center;
+      width: 100%;
+      padding: 50px 1em;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 1s ease;
+    }
+    .contactme.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .contacth2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    .text, .texte {
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0px 0px 3px black;
+      border: none;
+      margin-top: 20px;
+      padding: 10px;
+      border-radius: 3px;
+    }
+    .texte {
+      height: 100px;
+      resize: vertical;
+    }
+    .text:hover, .texte:hover {
+      box-shadow: 0px 0px 7px black;
+      transition: 0.5s;
+    }
+    .send {
+      width: 100%;
+      max-width: 408px;
+      height: 40px;
+      background: black;
+      color: white;
+      font-size: 15px;
+      border: none;
+      border-radius: 3px;
+      margin-top: 15px;
+      padding: 5px;
+      cursor: pointer;
+    }
+    .send:hover {
+      background: white;
+      box-shadow: 0px 0px 10px black;
+      color: black;
+      transition: 0.5s;
+    }
+    .footer {
+      background-color: black;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+    .copyright {
+      color: white;
+      margin-bottom: 10px;
+    }
+    .back {
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    @media screen and (max-width: 768px) {
+      ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        background: white;
+        width: 100%;
+        padding: 1em;
+        gap: 1em;
+        z-index: 1;
+      }
+      ul.active {
+        display: flex;
+      }
+      .menu-toggle {
+        display: block;
+      }
+    }
